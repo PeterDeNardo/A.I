@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package newpackage;
+import java.util.ArrayList;
 import java.util.List;
 /**
  *
@@ -11,6 +12,34 @@ import java.util.List;
  */
 public class Node {
     private int Id ;
-    private boolean visited;
-    private List<Node> nodes;
+    private boolean visited, blocked;
+    public List<Node> neighbors = new ArrayList();
+    
+    public Node (int id) {
+        this.Id = id;
+    }
+
+    public int getId() {
+        return Id;
+    }
+
+    public boolean isVisited() {
+        return visited;
+    }
+
+    public void setVisited(boolean visited) {
+        this.visited = visited;
+    }
+
+    public boolean isBlocked() {
+        return blocked;
+    }
+
+    public void setBlocked(boolean blocked) {
+        this.blocked = blocked;
+    }
+
+    public List<Node> getNodes() {
+        return neighbors;
+    }
 }
