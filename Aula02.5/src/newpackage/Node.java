@@ -12,8 +12,17 @@ import java.util.List;
  */
 public class Node {
     private int Id ;
+    private Node father;
     private boolean visited, blocked;
     public List<Node> neighbors = new ArrayList();
+    
+    public Node getFather() {
+        return father;
+    }
+
+    public void setFather(Node father) {
+        this.father = father;
+    }
     
     public Node (int id) {
         this.Id = id;

@@ -12,9 +12,12 @@ package newpackage;
 public class Main {
     public static void main(String[] args) {
         Map map = new Map(7, 6);
-        
-        for (Node node : map.getMap().get(0).neighbors) {
+        map.getMap().get(12).setBlocked(true);
+        for (Node node : map.getMap().get(8).neighbors) {
             System.out.println(node.getId());
         }
+        System.out.println("----------------------------------------------");
+        
+        BuscaEmLargura.buscaEmLargura(map.getMap().get(0), map.getMap().get(39), map);
     }
 }
