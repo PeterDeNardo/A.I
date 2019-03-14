@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package newpackage;
+package Map;
 
 /**
  *
@@ -17,7 +17,10 @@ public class Main {
             System.out.println(node.getId());
         }
         System.out.println("----------------------------------------------");
-        
+        for (Node node : map.getMap().get(29).neighbors ) {
+            System.out.println(node.getId());
+        }
+        BuscaEmProfundidade.buscaEmProfundidade(map.getMap().get(0), map.getMap().get(39), map);
         BuscaEmLargura.buscaEmLargura(map.getMap().get(0), map.getMap().get(39), map);
     }
 }
