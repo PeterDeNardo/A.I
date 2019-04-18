@@ -1,0 +1,10 @@
+Na classe *Chromosome* complete as seguintes funções:
+
+   - private static int calculateFitness(String gene) {
+   - public Chromosome mutate() {
+   - public Chromosome[] mate(Chromosome mate) {
+
+
+***Dica na classe static Chromosome generateRandom() {
+
+
